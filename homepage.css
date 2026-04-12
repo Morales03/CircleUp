@@ -1,0 +1,27 @@
+header img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+section {
+  width: 80%;
+  margin: 2% auto;
+  font-family: Arial, sans-serif;
+}
+
+.row {
+  display: flex;
+  gap: 2%;
+  border: 2px solid black;
+  padding: 2%;
+}
+
+.flip {
+  flex-direction: row-reverse;
+}
+
+.row img,
+.row div {
+  width: 50%;
+}
