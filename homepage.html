@@ -5,49 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CircleUp</title>
     <link rel="stylesheet" href="homepage.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" />
   </head>
   <body>
     <header>
+      <div id="navbar-container"></div>
       <img src="circleup.avif" alt="CircleUp" />
     </header>
-    <section class="row">
-      <img src="findplace.jpg" alt="Find Place" />
-      <div>
-        <h2>Event Locator</h2>
-        <p>
-          Find the best events in your area and connect with like-minded people.
-          Whether you're into music, sports, or art, CircleUp helps you discover
-          exciting activities happening around you. Join our community and never
-          miss out on the fun!
-        </p>
-      </div>
-    </section>
 
-    <section class="flip row">
-      <img src="planevent.jpeg" alt="Plan an Event" />
-      <div>
-        <h2>Plan an Event</h2>
-        <p>
-          Organize your own events and invite friends to join the fun. With
-          CircleUp, you can easily create and manage events, track RSVPs, and
-          share details with your attendees. Whether it's a small gathering or a
-          large party, CircleUp makes event planning a breeze!
-        </p>
-      </div>
-    </section>
+    <main>
+      <section class="custom-row">
+        <img src="findplace.jpg" alt="Find Place" />
+        <div>
+          <h2>Event Locator</h2>
+          <p>
+            Find the best events in your area and connect with like-minded people.
+            Whether you're into music, sports, or art, CircleUp helps you discover
+            exciting activities happening around you. Join our community and never
+            miss out on the fun!
+          </p>
+        </div>
+      </section>
 
-    <section class="row">
-      <img src="eventconcierge.jpg" alt="Event Concierge" />
-      <div>
-        <h2>Event Concierge</h2>
-        <p>
-          Need help planning your next event? Our Event Concierge service is
-          here to assist you with everything from venue selection to catering.
-          Let our experts take care of the details so you can focus on enjoying
-          your event. Contact us today to learn more about how we can make your
-          event unforgettable!
-        </p>
+      <section class="flip custom-row">
+        <img src="planevent.jpeg" alt="Plan an Event" />
+        <div>
+          <h2>Plan an Event</h2>
+          <p>
+            Organize your own events and invite friends to join the fun. With
+            CircleUp, you can easily create and manage events, track RSVPs, and
+            share details with your attendees. Whether it's a small gathering or a
+            large party, CircleUp makes event planning a breeze!
+          </p>
+        </div>
+      </section>
+
+      <section class="custom-row">
+        <img src="eventconcierge.jpg" alt="Event Concierge" />
+        <div>
+          <h2>Event Concierge</h2>
+          <p>
+            Need help planning your next event? Our Event Concierge service is
+            here to assist you with everything from venue selection to catering.
+            Let our experts take care of the details so you can focus on enjoying
+            your event. Contact us today to learn more about how we can make your
+            event unforgettable!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+          document.getElementById("navbar-container").innerHTML = `
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+
+                <a class="navbar-brand d-flex align-items-center" href="homepage.html">
+                  <img src="logo.png" alt="Circle Up Logo" class="logo me-2">
+                  <span class="site-name">CircleUp</span>
+                </a>
+
+                  <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="nav">
+                      <ul class="navbar-nav ms-auto">
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="homepage.html">Home</a>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" 
+                                data-bs-toggle="dropdown">
+                                Resources
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="EventLocator.html">Event Locator</a></li>
+                                <li><a class="dropdown-item" href="EventConcierge.html">Event Concierge</a></li>
+                                <li><a class="dropdown-item" href="Plan.html">Shape Your Event</a></li>
+                              </ul>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" 
+                                data-bs-toggle="dropdown">
+                                About Us
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Review.html"> Review & Testimony </a></li>
+                              </ul>
+                          </li>
+
+                      </ul>
+                  </div>
+              </div>
+            </nav>
+        `;
+    </script>
+   
+    <footer class="site-footer">
+
+      <div class="footer-container">
+
+        <!-- Brand / About -->
+        <div class="footer-section">
+            <h3>CircleUp</h3>
+            <p>Connecting people through events and experiences.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="homepage.html">Home</a>
+          <a href="EventLocator.html">Event Locator</a>
+          <a href="EventConcierge.html">Event Concierge</a>
+          <a href="Plan.html">Plan Event</a>
+          <a href="Review.html">Reviews</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Email: support@circleup.com</p>
+          <p>Phone: +1 (000) 000-0000</p>
+        </div>
+
       </div>
-    </section>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 CircleUp. All rights reserved.</p>
+      </div>
+
+    </footer>  
   </body>
 </html>
