@@ -7,8 +7,8 @@
 }
 
 body {
-    overflow-x: hidden;
     margin: 0;
+    overflow-x: hidden;
     text-align: center;
     font-family: Arial, sans-serif;  
     background-color: var(--blue-bg-light) !important;
@@ -62,16 +62,18 @@ section {
    NAVBAR (BOOTSTRAP)
 -------------------------------------------------- */
 nav.navbar {
-  position: relative;
-  z-index: 9999; 
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
 }
 
+#navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
 .navbar{
   width: 100%;
-  position: relative;
-  overflow: visible !important;
   background-color: var(--blue-dark) !important;
 }
 
