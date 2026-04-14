@@ -52,6 +52,10 @@ section {
 .flip {
   flex-direction: row-reverse;
 }
+.custom-row img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .custom-row img,
 .custom-row div {
