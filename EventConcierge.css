@@ -1,0 +1,255 @@
+:root {
+  --coral-light: #fff7f5;
+  --blue-dark: #0a2540;
+  --coral: #ff6b6b;
+  --white: #ffffff;
+  --blue-bg-light: #eaf2ff;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: var(--blue-bg-light) !important;
+}
+
+header {
+  text-align: center;
+  padding: 1 rem 1 rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--blue-dark);
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.3rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
+
+/* --------------------------------------------------
+   SECTIONS + LAYOUT
+-------------------------------------------------- */
+section {
+  width: 65%;
+  margin: 2% auto;
+  background: var(--coral-light);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.custom-row {
+  display: flex;
+  gap: 2%;
+  border: 2px solid var(--coral);
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin: 2% auto;
+  border-radius: 10px;
+}
+
+.flip {
+  flex-direction: row-reverse;
+}
+.custom-row img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-row img,
+.custom-row div {
+  width: 50%;
+}
+
+.expert-btn {
+  background-color: var(--blue-dark);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* --------------------------------------------------
+   NAVBAR (BOOTSTRAP)
+-------------------------------------------------- */
+nav.navbar {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+#navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--blue-dark) !important;
+}
+
+.navbar-collapse {
+  padding-right: 4.5rem;
+}
+
+.navbar-nav {
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  height: 4em;
+  width: auto;
+  border-radius: 5px;
+}
+.site-name {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--coral-light);
+}
+
+/* --------------------------------------------------
+   NAV LINKS + UNDERLINE ANIMATION
+-------------------------------------------------- */
+.nav-link {
+  position: relative;
+  color: var(--white) !important;
+  margin-left: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.nav-link.active {
+  color: var(--coral) !important;
+}
+
+/* underline base */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+/* hover animation */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* --------------------------------------------------
+   DROPDOWN MENUS
+-------------------------------------------------- */
+.dropdown-menu {
+  min-width: 260px;
+  white-space: normal;
+  z-index: 2000;
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* --------------------------------------------------
+   Footer 
+-------------------------------------------------- */
+
+/* FOOTER - MATCH NAVBAR STYLE */
+.site-footer {
+  background: var(--blue-dark);
+  color: white;
+  padding: 2rem 0;
+}
+
+/* FOOTER LAYOUT */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+/* FOOTER SECTIONS */
+.footer-section {
+  flex: auto;
+  min-width: 10rem;
+}
+
+/* FOOTER HEADINGS */
+.footer-section h3,
+.footer-section h4 {
+  color: white;
+}
+
+/* FOOTER LINKS */
+.footer-section a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  opacity: 0.85;
+}
+
+.socials-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.socials-container a svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--blue-dark);
+  transition: fill 0.3s ease;
+}
+.socials-container a {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  flex-shrink: 0;
+}
+
+.socials-container a:hover svg {
+  fill: var(--coral);
+}
+
+.footer-section a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  text-align: center;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.5rem;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
