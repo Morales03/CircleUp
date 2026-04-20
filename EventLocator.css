@@ -40,42 +40,47 @@ section {
   width: 90%;
   margin: 1rem auto;
   background: var(--coral-light);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   padding: 2rem;
 }
 
 /* Carousel */
 .carousel img {
-  height: 600px;
+  height: 37.5rem; 
   object-fit: cover;
 }
 
 .carousel-caption {
   background: rgba(0,0,0,0.5);
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 0.625rem; 
 }
 
 /* Cards */
 .card {
-  border-radius: 12px;
+  border-radius: 0.75rem; 
 }
 
 /* Hover Animation */
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-0.5rem); 
   transition: 0.3s;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.15);
 }
+
 
 /* Buttons */
 .btn-primary {
   background-color: var(--coral);
   border: none;
+  transition: all 0.3s ease;
+
 }
 
 .btn-primary:hover {
-  background-color: var(--coral);
+  background-color: #ff4b4b;
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.5rem 1.25rem rgba(255, 107, 107, 0.3);
 }
 
 
@@ -84,7 +89,7 @@ section {
 .cta {
   background: var(--coral-light);
   padding: 3rem 1rem;
-  border-radius: 0;
+  border-radius: 1rem;
 }
 
 /* Fade Animation */
@@ -98,9 +103,9 @@ section {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
   .carousel img {
-    height: 400px;
+    height: 25rem;
   }
 
   header h1 {
@@ -111,8 +116,8 @@ section {
 /* Event Cards */
 .event-card {
   background: var(--white);
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;                
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   height: 100%;
   position: relative;
@@ -121,9 +126,10 @@ section {
 
 /* Hover Effect */
 .event-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.5rem);         
+  box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.15);
 }
+
 
 /* Title */
 .event-card h5 {
@@ -151,7 +157,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  height: 5px;
+  height: 0.3125rem;
   width: 100%;
   background: linear-gradient(90deg, #ff6b6b, #ffb347);
 }
@@ -186,7 +192,7 @@ nav.navbar {
 .logo {
   height: 4em;
   width: auto;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 .site-name {
   font-size: 2rem;
@@ -201,7 +207,7 @@ nav.navbar {
 .nav-link {
     position: relative;
     color: var(--white) !important;
-    margin-left: 15px;
+    margin-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1rem;
@@ -216,9 +222,9 @@ nav.navbar {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: -0.2rem;
     width: 0%;
-    height: 2px;
+    height: 0.125rem;
     background-color: white;
     transition: width 0.3s ease;
 }
@@ -232,7 +238,7 @@ nav.navbar {
    DROPDOWN MENUS
 -------------------------------------------------- */
 .dropdown-menu {
-    min-width: 260px;
+    min-width: 16.25em;
     white-space: normal;
     z-index: 2000;
 }

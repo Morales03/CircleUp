@@ -19,12 +19,13 @@ body {
 header > img {
   width: 80%;
   display: block;
-  margin: 20px auto;
+  margin: 1.25rem auto;          
   position: relative;
   z-index: 1;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.625rem;       
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
+
 
 /* --------------------------------------------------
    SECTIONS + LAYOUT
@@ -33,29 +34,31 @@ section {
   width: 80%;
   margin: 2% auto;
   background: var(--coral-light);
-  border-radius: 12px;              
+  border-radius: 0.75rem;        
   padding: 2rem;
 }
 
 .custom-row {
   display: flex;
   gap: 2%;
-  border: 2px solid var(--coral);
+  border: 0.125rem solid var(--coral); 
   padding: 2%;
   justify-content: center;
   align-items: center;
   width: 80%;
   margin: 2% auto;
-  border-radius: 10px;
+  border-radius: 0.625rem;       
 }
 
 .flip {
   flex-direction: row-reverse;
 }
+
 .custom-row img {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.625rem;       
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
+
 
 .custom-row img,
 .custom-row div {
@@ -111,7 +114,7 @@ nav.navbar {
 .logo {
   height: 4em;
   width: auto;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 .site-name {
     font-size: 2rem;
@@ -126,11 +129,11 @@ nav.navbar {
 .nav-link {
     position: relative;
     color: var(--white) !important;
-    margin-left: 15px;
+    margin-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
 }
 .nav-link.active {
   color: var(--coral) !important;
@@ -141,9 +144,9 @@ nav.navbar {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: -0.2rem;
     width: 0%;
-    height: 2px;
+    height: 0.125rem;
     background-color: white;
     transition: width 0.3s ease;
 }
@@ -157,7 +160,7 @@ nav.navbar {
    DROPDOWN MENUS
 -------------------------------------------------- */
 .dropdown-menu {
-    min-width: 260px;
+    min-width: 16.25em;
     white-space: normal;
     z-index: 2000;
 }

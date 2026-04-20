@@ -50,7 +50,7 @@ header h2 {
   width: 65%;
   margin: 2% auto;
   background: var(--coral-light);
-  border-radius: 12px;
+  border-radius: 0.75rem;   
   padding: 2rem;
 }
 
@@ -60,7 +60,7 @@ header h2 {
   padding: 5%;
   width: 65%;
   margin: 2% auto;
-  border-radius: 12px;
+  border-radius: 0.75rem;   
   padding: 2rem;
 }
 
@@ -68,8 +68,8 @@ header h2 {
   background: white;
   padding: 4%;
   width: 60%;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;   
+  box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.1); 
 }
 
 .form-group {
@@ -88,14 +88,14 @@ header h2 {
 .form-group input,
 .form-group textarea {
   padding: 2%;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+  border-radius: 0.5rem;   
+  border: 0.0625rem solid #ddd; 
   font-size: 1rem;
   width: 100%;
 }
 
 .form-group textarea {
-  min-height: 100px;
+  min-height: 6.25rem; 
   resize: none;
 }
 
@@ -105,11 +105,18 @@ header h2 {
   border: none;
   padding: 2% 5%;
   font-size: 1.1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem; 
   cursor: pointer;
   margin-top: 3%;
   width: 100%;
   transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #ff4b4b;
+  color: var(--white);
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.5rem 1.25rem rgba(255, 107, 107, 0.3);
 }
 
 /*hint cards*/
@@ -322,7 +329,7 @@ nav.navbar {
 .logo {
   height: 4em;
   width: auto;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 .site-name {
   font-size: 2rem;
@@ -336,11 +343,11 @@ nav.navbar {
 .nav-link {
   position: relative;
   color: var(--white) !important;
-  margin-left: 15px;
+  margin-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
 }
 .nav-link.active {
   color: var(--coral) !important;
@@ -351,9 +358,9 @@ nav.navbar {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
+  bottom: -0.2rem;
   width: 0%;
-  height: 2px;
+  height: 0.125rem;
   background-color: white;
   transition: width 0.3s ease;
 }
@@ -367,7 +374,7 @@ nav.navbar {
    DROPDOWN MENUS
 -------------------------------------------------- */
 .dropdown-menu {
-  min-width: 260px;
+  min-width: 16.25em;
   white-space: normal;
   z-index: 2000;
 }
