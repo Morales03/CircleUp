@@ -14,6 +14,16 @@ body {
   background-color: var(--blue-bg-light) !important;
 }
 
+header > img {
+  width: 50%;
+  display: block;
+  margin: 1.25rem auto;
+  position: relative;
+  z-index: 1;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
 header {
   text-align: center;
   padding: 1 rem 1 rem;
@@ -33,16 +43,6 @@ header h2 {
   margin-top: 0.5rem;
 }
 
-header > img {
-  width: 80%;
-  display: block;
-  margin: 1.25rem auto;
-  position: relative;
-  z-index: 1;
-  border-radius: 0.625rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
 /* --------------------------------------------------
    SECTIONS + LAYOUT
 -------------------------------------------------- */
@@ -52,51 +52,7 @@ section {
   background: var(--coral-light);
   border-radius: 0.75rem;
   padding: 2rem;
-}
-
-.custom-row {
-  display: flex;
-  gap: 2%;
-  border: 0.125rem solid var(--coral);
-  padding: 2%;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin: 2% auto;
-  border-radius: 0.625rem;
-}
-
-.flip {
-  flex-direction: row-reverse;
-}
-
-.custom-row img {
-  border-radius: 0.625rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-.custom-row img,
-.custom-row div {
-  width: 50%;
-}
-
-/* CORAL CTA BUTTON */
-.strategy-btn {
-  display: inline-block;
-  background-color: var(--coral);
-  color: var(--white);
-  padding: 0.5rem 1.25rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.strategy-btn:hover {
-  background-color: #ff4b4b;
-  color: var(--white);
-  transform: translateY(-0.125rem);
-  box-shadow: 0 0.5rem 1.25rem rgba(255, 107, 107, 0.3);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
 }
 
 /* --------------------------------------------------
