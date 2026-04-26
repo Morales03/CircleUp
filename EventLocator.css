@@ -43,7 +43,6 @@ section {
   border-radius: 0.625rem;
   padding: 2rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-
 }
 
 /* Carousel */
@@ -276,6 +275,7 @@ nav.navbar {
 .footer-section {
   flex: auto;
   min-width: 10rem;
+  text-align: left;
 }
 
 /* FOOTER HEADINGS */

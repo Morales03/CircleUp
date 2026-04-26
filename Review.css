@@ -367,6 +367,7 @@ nav.navbar {
 .footer-section {
   flex: auto;
   min-width: 10rem;
+  text-align: left;
 }
 
 /* FOOTER HEADINGS */
