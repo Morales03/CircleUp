@@ -39,20 +39,20 @@ section {
   width: 65%;
   margin: 2% auto;
   background: var(--coral-light);
-  border-radius: 0.75rem;        
+  border-radius: 0.75rem;
   padding: 2rem;
 }
 
 .custom-row {
   display: flex;
   gap: 2%;
-  border: 0.125rem solid var(--coral); 
+  border: 0.125rem solid var(--coral);
   padding: 2%;
   justify-content: center;
   align-items: center;
   width: 65%;
   margin: 2% auto;
-  border-radius: 0.625rem;       
+  border-radius: 0.625rem;
 }
 
 .flip {
@@ -60,7 +60,7 @@ section {
 }
 
 .custom-row img {
-  border-radius: 0.625rem;       
+  border-radius: 0.625rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
@@ -75,7 +75,7 @@ section {
   border: none;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  border-radius: 0.3125rem;      
+  border-radius: 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   display: block;

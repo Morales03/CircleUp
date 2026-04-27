@@ -1,16 +1,16 @@
 :root {
-  --coral-light: #FFF7F5;      
-  --blue-dark:  #0A2540;       
-  --coral: #FF6B6B;           
-  --white: #FFFFFF;
-  --blue-bg-light: #EAF2FF; 
+  --coral-light: #fff7f5;
+  --blue-dark: #0a2540;
+  --coral: #ff6b6b;
+  --white: #ffffff;
+  --blue-bg-light: #eaf2ff;
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
   text-align: center;
-  font-family: Arial, sans-serif;  
+  font-family: Arial, sans-serif;
   background-color: var(--blue-bg-light) !important;
 }
 
@@ -34,7 +34,6 @@ header p {
   margin-top: 0.5rem;
 }
 
-
 /* Sections */
 section {
   width: 90%;
@@ -47,35 +46,34 @@ section {
 
 /* Carousel */
 .carousel img {
-  height: 37.5rem; 
+  height: 37.5rem;
   object-fit: cover;
 }
 
 .carousel-caption {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   padding: 1rem;
-  border-radius: 0.625rem; 
+  border-radius: 0.625rem;
 }
 
 /* Cards */
 .card {
-  border-radius: 0.75rem; 
+  border-radius: 0.75rem;
 }
 
 /* Hover Animation */
 .card:hover {
-  transform: translateY(-0.5rem); 
+  transform: translateY(-0.5rem);
   transition: 0.3s;
-  box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.15);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
 }
-
 
 /* Buttons */
 .btn-primary {
   background-color: var(--coral);
   border: none;
   transition: all 0.3s ease;
-
+  border-radius: 2rem;
 }
 
 .btn-primary:hover {
@@ -83,8 +81,6 @@ section {
   transform: translateY(-0.125rem);
   box-shadow: 0 0.5rem 1.25rem rgba(255, 107, 107, 0.3);
 }
-
-
 
 /* CTA */
 .cta {
@@ -99,8 +95,12 @@ section {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Responsive */
@@ -117,7 +117,7 @@ section {
 /* Event Cards */
 .event-card {
   background: var(--white);
-  border-radius: 0.75rem;                
+  border-radius: 0.75rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   height: 100%;
@@ -127,10 +127,9 @@ section {
 
 /* Hover Effect */
 .event-card:hover {
-  transform: translateY(-0.5rem);         
+  transform: translateY(-0.5rem);
   box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.15);
 }
-
 
 /* Title */
 .event-card h5 {
@@ -177,18 +176,18 @@ nav.navbar {
   z-index: 9999;
 }
 
-.navbar{
+.navbar {
   width: 100%;
   background-color: var(--blue-dark) !important;
 }
 
 .navbar-collapse {
-    padding-right: 4.5rem;
+  padding-right: 4.5rem;
 }
 
 .navbar-nav {
-    align-items: center;
-    gap: 1rem;
+  align-items: center;
+  gap: 1rem;
 }
 .logo {
   height: 4em;
@@ -198,21 +197,20 @@ nav.navbar {
 .site-name {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--coral-light)   
+  color: var(--coral-light);
 }
-
 
 /* --------------------------------------------------
    NAV LINKS + UNDERLINE ANIMATION
 -------------------------------------------------- */
 .nav-link {
-    position: relative;
-    color: var(--white) !important;
-    margin-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1rem;
-    font-weight: 400;
+  position: relative;
+  color: var(--white) !important;
+  margin-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
 }
 .nav-link.active {
   color: var(--coral) !important;
@@ -220,34 +218,33 @@ nav.navbar {
 
 /* underline base */
 .nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.2rem;
-    width: 0%;
-    height: 0.125rem;
-    background-color: white;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0%;
+  height: 0.125rem;
+  background-color: white;
+  transition: width 0.3s ease;
 }
 
 /* hover animation */
 .nav-link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 /* --------------------------------------------------
    DROPDOWN MENUS
 -------------------------------------------------- */
 .dropdown-menu {
-    min-width: 16.25em;
-    white-space: normal;
-    z-index: 2000;
+  min-width: 16.25em;
+  white-space: normal;
+  z-index: 2000;
 }
 
 .dropdown {
-    position: relative;
+  position: relative;
 }
-
 
 /* --------------------------------------------------
    Footer 
@@ -305,7 +302,7 @@ nav.navbar {
   fill: var(--blue-dark);
   transition: fill 0.3s ease;
 }
-.socials-container a{
+.socials-container a {
   background-color: white;
   padding: 3rem;
   border-radius: 50%;
